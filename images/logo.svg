@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="100%" height="100%">
+  <defs>
+    <!-- Sfumatura Metallo per la parte INOX -->
+    <linearGradient id="metalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A5568" />
+      <stop offset="50%" stop-color="#718096" />
+      <stop offset="100%" stop-color="#2D3748" />
+    </linearGradient>
+    
+    <!-- Sfumatura Tech per la parte WORKS/Progettazione -->
+    <linearGradient id="techGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0052D4" />
+      <stop offset="50%" stop-color="#4364F7" />
+      <stop offset="100%" stop-color="#6FB1FC" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sfondo scuro per far risaltare il metallo e il blu blueprint -->
+  <rect width="800" height="300" fill="#1A202C" rx="15" />
+
+  <!-- SIMBOLO / ICONA (Incrocio tra CAD e Acciaio Solido) -->
+  <g transform="translate(80, 65)">
+    <!-- Lato Sinistro: Il Blocco Solido di Acciaio (Tagliato a laser) -->
+    <path d="M 40,30 L 110,30 L 75,140 L 40,140 Z" fill="url(#metalGrad)" />
+    <path d="M 75,140 L 110,30 L 145,140 Z" fill="#4A5568" opacity="0.7" />
+    
+    <!-- Lato Destro: La Pre-Progettazione / Linee CAD e Assonometria -->
+    <!-- Linee vettoriali del blueprint -->
+    <path d="M 145,140 L 180,30 L 215,140" fill="none" stroke="url(#techGrad)" stroke-width="5" stroke-linecap="round" />
+    <path d="M 110,30 L 180,30" fill="none" stroke="#00A3FF" stroke-width="3" stroke-dasharray="6,4" />
+    
+    <!-- Punti di ancoraggio tipici dei software di disegno tecnico -->
+    <circle cx="180" cy="30" r="5" fill="#6FB1FC" />
+    <circle cx="215" cy="140" r="5" fill="#6FB1FC" />
+    <circle cx="145" cy="140" r="5" fill="#0052D4" />
+    
+    <!-- Griglia di progettazione sottile sullo sfondo del simbolo -->
+    <line x1="25" y1="85" x2="230" y2="85" stroke="#718096" stroke-width="1" opacity="0.2" stroke-dasharray="2,2" />
+  </g>
+
+  <!-- TESTO / BRANDING -->
+  <!-- INOX: Forte, massiccio, grigio metallo chiaro -->
+  <text x="340" y="155" font-family="'Montserrat', 'Helvetica Neue', sans-serif" font-size="65" font-weight="900" fill="#E2E8F0" letter-spacing="2">INOX</text>
+  
+  <!-- WORKS: Tecnologico, sottile, blu blueprint -->
+  <text x="535" y="155" font-family="'Montserrat', 'Helvetica Neue', sans-serif" font-size="65" font-weight="300" fill="#00A3FF" letter-spacing="1">WORKS</text>
+  
+  <!-- SOTTOTITOLO: Il core business dell'azienda -->
+  <text x="345" y="195" font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#718096" letter-spacing="7">PRE-PROGETTAZIONE CAD / REALTÀ</text>
+</svg>
